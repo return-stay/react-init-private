@@ -11,7 +11,7 @@ import { HashRouter as Router, Switch , withRouter} from "react-router-dom";
 import connect from './utils/connect'
 import {ConfigProvider} from 'antd'
 import { getLocal } from './utils/storage';
-@connect
+
 class App extends React.Component {
   constructor() {
     super();
@@ -51,4 +51,4 @@ class App extends React.Component {
   }
 }
 
-export default withRouter(App);
+export default withRouter(connect(App));
